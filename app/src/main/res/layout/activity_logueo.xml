@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.santaella.biner.logueo">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/mesamenu"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="158dp"
+            app:srcCompat="@drawable/logo1" />
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/usuariocel" />
+
+        <EditText
+            android:id="@+id/usucel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="18"
+            android:inputType="none"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18dp"
+            android:text="@string/contraseña" />
+
+        <EditText
+            android:id="@+id/contraseñaL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="18"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/cusuario"
+            style="@android:style/Widget.DeviceDefault.Light.Button.Toggle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cUsuario"
+            android:textColor="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/aceptar"
+                style="@android:style/Widget.Holo.Button.Toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/aceptar" />
+
+            <Button
+                android:id="@+id/cancelar"
+                style="@android:style/Widget.Holo.Light.Button.Toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cancelar" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

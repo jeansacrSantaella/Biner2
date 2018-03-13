@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mesamenu"
+    tools:context="com.example.santaella.biner.vistaProducto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgProducto"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/comida" />
+
+        <TextView
+            android:id="@+id/nProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/dProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:textColor="@color/colorPrimary"
+            android:text="This is line 1 \nThis is line 2 \nLine number 3"
+            tools:ignore="Deprecated" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/cantidad"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="167dp"
+            android:layout_marginRight="167dp"
+            android:gravity="center"
+            android:prompt="@string/cantidad"
+            android:entries="@array/cantidades"
+            android:popupBackground="@android:drawable/ic_input_add"
+            android:spinnerMode="dialog" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:orientation="horizontal"></LinearLayout>
+
+        <Button
+            android:id="@+id/aceptarP"
+            style="@android:style/Widget.Button.Toggle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/addCarrito" />
+
+        <Button
+            android:id="@+id/cancelarP"
+            style="@android:style/Widget.Holo.Light.Button.Toggle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="@string/cancelar" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
